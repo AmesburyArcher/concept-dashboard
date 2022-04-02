@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 
 }
 
@@ -12,14 +16,68 @@ main {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 0.5fr 5fr;
 }
 
 #header {
     border: 1px solid black;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;;
+}
+
+.upper-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem 0 3rem;
+}
+
+input[type=search] {
+    width: clamp(20ch, 60%, 80%);
+    height: 1.5rem;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(228, 228, 228);
+}
+
+input[type=search]:focus {
+    box-shadow: 2px 2px 5px black;
+}
+
+#header .profile,
+#header .user-intro {
+    font-weight: 700;
+}
+
+.welcome {
+    font-size: 0.75rem;
+    padding-bottom: 0.5rem;
+}
+
+.user {
+    font-size: 20px;
+}
+
+.lower-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem 1rem 3rem;
+}
+
+.button-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.header-btn {
+    border-radius: 18px;
+    border: 1px solid black;
+    width: 6rem;
+    height: 2rem;
+    background-color: #333;
+    color: white;
 }
 
 #dashboard {
@@ -45,5 +103,33 @@ ul.directory, ul.settings {
 #content {
     border: 1px solid black;
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.project {
+    border: 1px solid black;
+}
+
+.right-content {
+    border: solid 1px black;
+}
+
+.announcements-container {
+    
+}
+
+.trending-container {
+    
+}
+
+.projects-1 {
+    
 }
 
