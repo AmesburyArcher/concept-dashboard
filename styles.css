@@ -52,7 +52,7 @@ input[type=search]:focus {
 }
 
 .welcome {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     padding-bottom: 0.5rem;
 }
 
@@ -97,7 +97,7 @@ ul.directory, ul.settings {
 }
 
 #dashboard > .logo {
-    
+    font-size: 28px;
 }
 
 #content {
@@ -111,25 +111,94 @@ ul.directory, ul.settings {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 4rem 1.5rem;
 }
 
 .project {
     border: 1px solid black;
+    border-radius: 10px;
+}
+
+.projects-1 {
+    position: relative;
+}
+
+.projects-1::before {
+    content: 'Your Projects';
+    position: absolute;
+    top: -35px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.right-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4rem;
+    padding: 4rem 1.5rem 4rem 0;
+}
+
+.right-content-container p {
+    height: fit-content
 }
 
 .right-content {
     border: solid 1px black;
+    border-radius: 10px;
 }
 
 .announcements-container {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 2rem;
+    flex: 1;
+    position: relative;
+}
+
+/* .announcements-container::before {
+    content: 'Announcements';
+    position: absolute;
+    top: -35px;
+    left: 0;
+    font-size: 20px;
+    font-weight: 700;
+} */
+
+.announcements{
+    padding: 1rem 0 1rem 0;
+}
+
+.announcements-border {
+    border-bottom: 1px solid #333;
+}
+
+.announcements, 
+.trending {
+    flex: 1;
 }
 
 .trending-container {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    flex: 1;
+    position: relative;
 }
 
-.projects-1 {
-    
-}
+/* .trending-container::before {
+    content: 'Trending';
+    position: absolute;
+    top: -35px;
+    left: 0;
+    font-size: 20px;
+    font-weight: 700;
+} */
+
+
+
 
